@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "JR STUDIO — Branding e Desenvolvimento Web",
+    "description": "Estúdio de branding e desenvolvimento web. Criamos identidades visuais e websites rápidos que dão às marcas uma presença digital memorável."
+  },
+  "nav": {
+    "services": "Serviços",
+    "portfolio": "Portefólio",
+    "about": "Sobre",
+    "contact": "Contacto",
+    "menu": "Menu",
+    "switchLangLabel": "Ver o site em inglês"
+  },
+  "hero": {
+    "eyebrow": "Estúdio de branding e web",
+    "title": "Identidade visual e websites para marcas que querem ser lembradas.",
+    "subtitle": "Da estratégia de marca ao site publicado: design de identidade, interfaces e desenvolvimento web num só estúdio.",
+    "cta": "Ver trabalhos"
+  },
+  "services": {
+    "title": "Serviços",
+    "intro": "Duas disciplinas, uma visão: a marca e a sua presença digital pensadas em conjunto.",
+    "items": [
+      {
+        "title": "Branding e identidade visual",
+        "points": ["Estratégia e posicionamento de marca", "Logótipo e sistema de identidade", "Tipografia, cor e guia de marca", "Aplicações e materiais de comunicação"]
+      },
+      {
+        "title": "Desenvolvimento web",
+        "points": ["Design de interfaces (UI/UX)", "Websites e landing pages à medida", "Performance, SEO e acessibilidade", "Manutenção e evolução contínua"]
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portefólio",
+    "intro": "Uma seleção de projetos recentes de branding e web.",
+    "categories": { "branding": "Branding", "web": "Web" },
+    "visit": "Visitar projeto"
+  },
+  "about": {
+    "title": "Sobre",
+    "body": [
+      "A JR STUDIO é um estúdio independente de design e desenvolvimento web. Trabalhamos de perto com cada cliente, do primeiro esboço ao lançamento.",
+      "Acreditamos que uma marca forte e um site rápido e bem construído são a mesma conversa — por isso tratamos os dois juntos."
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "intro": "Tem um projeto em mente? Fale connosco.",
+    "emailLabel": "Enviar email",
+    "follow": "Siga-nos"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  }
+}

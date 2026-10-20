@@ -1,0 +1,16 @@
+---
+import Section from './Section.astro';
+import { dict, type Lang } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+
+const { about } = dict[Astro.props.lang];
+---
+
+<Section id="about" index="03" title={about.title}>
+  <div class="space-y-6 text-xl leading-relaxed text-muted md:ml-[33.333%] md:text-2xl">
+    {about.body.map((p) => <p>{p}</p>)}
+  </div>
+</Section>

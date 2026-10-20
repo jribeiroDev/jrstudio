@@ -1,0 +1,25 @@
+---
+import Section from './Section.astro';
+import { dict, type Lang } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+
+const { services } = dict[Astro.props.lang];
+---
+
+<Section id="services" index="01" title={services.title} intro={services.intro}>
+  <div class="grid gap-6 md:grid-cols-2">
+    {services.items.map((item) => (
+      <article class="border border-white/10 bg-ink-2 p-8 md:p-10">
+        <h3 class="text-xl font-medium">{item.title}</h3>
+        <ul class="mt-6 space-y-3 text-muted">
+          {item.points.map((point) => (
+            <li class="flex gap-3"><span class="text-gold" aria-hidden="true">—</span>{point}</li>
+          ))}
+        </ul>
+      </article>
+    ))}
+  </div>
+</Section>

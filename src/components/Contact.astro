@@ -1,0 +1,28 @@
+---
+import Section from './Section.astro';
+import { dict, type Lang } from '../i18n/utils';
+import { SITE } from '../site';
+
+interface Props {
+  lang: Lang;
+}
+
+const { contact } = dict[Astro.props.lang];
+---
+
+<Section id="contact" index="04" title={contact.title} intro={contact.intro}>
+  <div class="md:ml-[33.333%]">
+    <a
+      href={`mailto:${SITE.email}`}
+      class="inline-block break-all text-3xl font-semibold tracking-tight underline decoration-gold decoration-2 underline-offset-8 transition-colors hover:text-gold sm:text-5xl"
+    >
+      {SITE.email}
+    </a>
+    <p class="mt-12 text-sm uppercase tracking-[0.3em] text-muted">{contact.follow}</p>
+    <ul class="mt-4 flex flex-wrap gap-x-8 gap-y-3">
+      {SITE.socials.map((s) => (
+        <li><a href={s.url} rel="me" class="transition-colors hover:text-gold">{s.label} <span aria-hidden="true">↗</span></a></li>
+      ))}
+    </ul>
+  </div>
+</Section>

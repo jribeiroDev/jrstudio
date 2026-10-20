@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "JR STUDIO — Branding & Web Development",
+    "description": "Branding and web development studio. We craft visual identities and fast websites that give brands a memorable digital presence."
+  },
+  "nav": {
+    "services": "Services",
+    "portfolio": "Work",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "switchLangLabel": "View the site in Portuguese"
+  },
+  "hero": {
+    "eyebrow": "Branding & web studio",
+    "title": "Visual identities and websites for brands that want to be remembered.",
+    "subtitle": "From brand strategy to a live website: identity design, interfaces and web development under one roof.",
+    "cta": "See our work"
+  },
+  "services": {
+    "title": "Services",
+    "intro": "Two disciplines, one vision: the brand and its digital presence designed together.",
+    "items": [
+      {
+        "title": "Branding & visual identity",
+        "points": ["Brand strategy and positioning", "Logo and identity system", "Typography, colour and brand guidelines", "Applications and communication materials"]
+      },
+      {
+        "title": "Web development",
+        "points": ["Interface design (UI/UX)", "Custom websites and landing pages", "Performance, SEO and accessibility", "Ongoing maintenance and growth"]
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Selected work",
+    "intro": "A selection of recent branding and web projects.",
+    "categories": { "branding": "Branding", "web": "Web" },
+    "visit": "Visit project"
+  },
+  "about": {
+    "title": "About",
+    "body": [
+      "JR STUDIO is an independent design and web development studio. We work closely with every client, from the first sketch to launch.",
+      "We believe a strong brand and a fast, well-built website are the same conversation — so we handle both together."
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Have a project in mind? Let's talk.",
+    "emailLabel": "Send an email",
+    "follow": "Follow us"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
