@@ -1,6 +1,5 @@
 ---
 import { getRelativeLocaleUrl } from 'astro:i18n';
-import Monogram from '../assets/logo/monogram.svg';
 import { dict, sections, type Lang } from '../i18n/utils';
 
 interface Props {
@@ -15,8 +14,8 @@ const other: Lang = lang === 'pt' ? 'en' : 'pt';
 <header class="sticky top-0 z-50 border-b border-white/5 bg-ink/85 backdrop-blur">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-4 sm:px-6">
     <a href={getRelativeLocaleUrl(lang)} class="flex items-center gap-3">
-      <Monogram width={36} height={36} aria-hidden="true" />
-      <span class="text-sm font-semibold tracking-[0.3em]">JR STUDIO</span>
+      <img src="/logo_jr.svg" width="36" height="36" alt="" />
+      <span class="font-brand text-sm font-normal tracking-[0.3em]">JR STUDIO</span>
     </a>
 
     <nav aria-label={nav.menu} class="flex items-center gap-6 text-sm">

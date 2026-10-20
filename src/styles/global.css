@@ -7,6 +7,7 @@
   --color-gold: #C8A96A;
   --color-muted: #9A968E;
   --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-brand: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {

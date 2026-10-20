@@ -1,5 +1,4 @@
 ---
-import Lockup from '../assets/logo/lockup-horizontal.svg';
 import { dict, type Lang } from '../i18n/utils';
 import { SITE } from '../site';
 
@@ -12,7 +11,10 @@ const { footer } = dict[Astro.props.lang];
 
 <footer class="border-t border-white/10">
   <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-12 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
-    <Lockup height={40} width={122} role="img" aria-label={SITE.name} />
+    <div class="flex items-center gap-3 text-paper">
+      <img src="/logo_jr.svg" width="32" height="32" alt="" />
+      <span class="font-brand text-sm font-semibold tracking-[0.3em]">{SITE.name}</span>
+    </div>
     <p>© {new Date().getFullYear()} {SITE.name}. {footer.rights}</p>
   </div>
 </footer>

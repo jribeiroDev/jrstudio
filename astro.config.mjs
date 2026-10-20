@@ -24,6 +24,14 @@ export default defineConfig({
       weights: ['200 800'],
       subsets: ['latin', 'latin-ext'],
     },
+    {
+      // Only for the "JR STUDIO" brand name in header/footer.
+      provider: fontProviders.fontsource(),
+      name: 'Outfit',
+      cssVariable: '--font-outfit',
+      weights: [600],
+      subsets: ['latin'],
+    },
   ],
 
   vite: {
