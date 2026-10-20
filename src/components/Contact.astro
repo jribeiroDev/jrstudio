@@ -7,21 +7,25 @@ interface Props {
   lang: Lang;
 }
 
-const { contact } = dict[Astro.props.lang];
+const { contact, newTab } = dict[Astro.props.lang];
 ---
 
-<Section id="contact" index="04" title={contact.title} intro={contact.intro}>
-  <div class="md:ml-[33.333%]">
+<Section id="contact" index="04" title={contact.title} intro={contact.intro} inline>
+  <div>
     <a
       href={`mailto:${SITE.email}`}
-      class="inline-block break-all text-3xl font-semibold tracking-tight underline decoration-gold decoration-2 underline-offset-8 transition-colors hover:text-gold sm:text-5xl"
+      class="inline-block break-all text-3xl font-semibold tracking-tight underline decoration-gold decoration-2 underline-offset-8 transition-colors hover:text-gold sm:text-4xl"
     >
       {SITE.email}
     </a>
     <p class="mt-12 text-sm uppercase tracking-[0.3em] text-muted">{contact.follow}</p>
     <ul class="mt-4 flex flex-wrap gap-x-8 gap-y-3">
       {SITE.socials.map((s) => (
-        <li><a href={s.url} rel="me" class="transition-colors hover:text-gold">{s.label} <span aria-hidden="true">↗</span></a></li>
+        <li>
+          <a href={s.url} target="_blank" rel="me noopener noreferrer" class="transition-colors hover:text-gold">
+            {s.label} <span aria-hidden="true">↗</span><span class="sr-only"> {newTab}</span>
+          </a>
+        </li>
       ))}
     </ul>
   </div>

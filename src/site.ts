@@ -5,8 +5,8 @@ export const SITE = {
   email: "geral@jrstudio.pt",
   areaServed: "Portugal",
   socials: [
-    { label: "Instagram", url: "https://www.instagram.com/jrstudio" },
-    { label: "LinkedIn", url: "https://www.linkedin.com/company/jrstudio" },
-    { label: "Behance", url: "https://www.behance.net/jrstudio" },
+    { label: "Instagram", url: "https://www.instagram.com/jr.studio.pt" },
+    // { label: "LinkedIn", url: "https://www.linkedin.com/company/jrstudio" },
+    // { label: "Behance", url: "https://www.behance.net/jrstudio" },
   ],
 };

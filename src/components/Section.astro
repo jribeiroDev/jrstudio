@@ -4,19 +4,24 @@ interface Props {
   index: string;
   title: string;
   intro?: string;
+  /** Render the content in the right-hand column, next to the title, instead of full width below it. */
+  inline?: boolean;
 }
 
-const { id, index, title, intro } = Astro.props;
+const { id, index, title, intro, inline = false } = Astro.props;
 ---
 
 <section id={id} class="scroll-mt-20 border-t border-white/10">
-  <div class="mx-auto max-w-6xl px-4 py-24 sm:px-6 md:py-32">
-    <div class="mb-14 grid gap-6 md:grid-cols-[1fr_2fr]">
+  <div class="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-28">
+    <div class:list={['grid gap-6 md:grid-cols-[1fr_2fr]', !inline && 'mb-12 md:mb-14']}>
       <h2 class="text-sm uppercase tracking-[0.3em] text-gold">
         <span class="mr-3 text-muted" aria-hidden="true">{index}</span>{title}
       </h2>
-      {intro && <p class="text-2xl leading-snug text-balance md:text-3xl">{intro}</p>}
+      <div>
+        {intro && <p class="text-2xl leading-snug text-balance md:text-3xl">{intro}</p>}
+        {inline && <div class:list={[intro && 'mt-10']}><slot /></div>}
+      </div>
     </div>
-    <slot />
+    {!inline && <slot />}
   </div>
 </section>

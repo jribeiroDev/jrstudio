@@ -9,8 +9,8 @@ interface Props {
 const { about } = dict[Astro.props.lang];
 ---
 
-<Section id="about" index="03" title={about.title}>
-  <div class="space-y-6 text-xl leading-relaxed text-muted md:ml-[33.333%] md:text-2xl">
+<Section id="about" index="03" title={about.title} inline>
+  <div class="space-y-6 text-xl leading-relaxed text-muted md:text-2xl">
     {about.body.map((p) => <p>{p}</p>)}
   </div>
 </Section>

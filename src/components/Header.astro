@@ -26,8 +26,14 @@ const other: Lang = lang === 'pt' ? 'en' : 'pt';
         ))}
       </ul>
 
-      <details class="relative md:hidden">
-        <summary class="cursor-pointer list-none text-muted hover:text-paper [&::-webkit-details-marker]:hidden">{nav.menu}</summary>
+      <details class="group relative md:hidden">
+        <summary class="flex size-10 cursor-pointer list-none items-center justify-center text-muted hover:text-paper [&::-webkit-details-marker]:hidden">
+          <span class="sr-only">{nav.menu}</span>
+          <svg viewBox="0 0 24 24" class="size-6" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path class="group-open:hidden" d="M3 7h18M3 12h18M3 17h18" />
+            <path class="hidden group-open:block" d="M5 5l14 14M19 5L5 19" />
+          </svg>
+        </summary>
         <ul class="absolute right-0 mt-4 w-48 border border-white/10 bg-ink-2 py-2">
           {sections.map((id) => (
             <li><a href={`#${id}`} class="block px-4 py-2 text-muted hover:text-paper">{nav[id]}</a></li>
