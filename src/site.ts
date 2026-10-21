@@ -2,7 +2,7 @@
 // TODO: substituir os placeholders pelos dados reais.
 export const SITE = {
   name: "JR STUDIO",
-  email: "geral@jrstudio.pt",
+  email: "info@jrstudio.pt",
   areaServed: "Portugal",
   socials: [
     { label: "Instagram", url: "https://www.instagram.com/jr.studio.pt" },
